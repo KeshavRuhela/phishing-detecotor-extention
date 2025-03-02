@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing URL Checker",
+  "version": "1.0",
+  "description": "Check if a website is phishing or safe.",
+  "permissions": ["activeTab", "scripting", "storage", "declarativeNetRequest"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
